@@ -144,14 +144,13 @@ const payload_map = [
         toPort: 9021
     },
     {
-        displayTitle: "Browser appcache remover",
+        displayTitle: "Browser appCache Remove",
         description: "Deletes for only the current user in webkit-only mode",
         fileName: "browser_appcache_remove-v1.1.elf",
         author: "Storm21CH, idlesauce",
         projectSource: "https://github.com/Storm21CH/PS5_Browser_appCache_remove",
         binarySource: "https://github.com/Storm21CH/PS5_Browser_appCache_remove/releases/tag/v1.1",
         version: "1.1",
-        toPort: 9021,
-        customAction: CUSTOM_ACTION_APPCACHE_REMOVE
+        toPort: 9021
     }
 ];
