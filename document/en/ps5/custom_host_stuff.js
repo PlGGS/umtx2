@@ -272,7 +272,7 @@ function populatePayloadsPage(wkOnlyMode = false) {
 
         const payloadInfo = document.createElement("p");
         payloadInfo.classList.add("payload-btn-info");
-        payloadInfo.innerHTML = `v${payload.version} &centerdot; ${payload.author}`;
+        payloadInfo.innerHTML = `${payload.version} &centerdot; ${payload.author}`;
 
         payloadButton.appendChild(payloadTitle);
         payloadButton.appendChild(payloadDescription);
