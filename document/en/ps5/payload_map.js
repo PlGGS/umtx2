@@ -52,6 +52,16 @@ const payload_map = [
         toPort: 9021
     },
     {
+        displayTitle: "PS5 Linux Loader",
+        description: "Linux loader for PS5",
+        fileName: "ps5-linux-loader.elf",
+        author: "ps5-linux",
+        projectSource: "https://github.com/ps5-linux/ps5-linux-loader",
+        binarySource: "https://github.com/ps5-linux/ps5-linux-loader/releases/tag/v2.1",
+        version: "v2.1",
+        toPort: 9021
+    },
+    {
         displayTitle: "Byepervisor HEN",
         description: "FPKG enabler",
         fileName: "byepervisor.elf",
@@ -134,56 +144,14 @@ const payload_map = [
         toPort: 9021
     },
     {
-        displayTitle: "ps5debug",
-        description: "Debugger, open source version by DizzRL",
-        fileName: "ps5debug_dizz.elf",
-        author: "Dizz, astrelsky, John Tornblom, SiSTR0, golden, idlesauce",
-        projectSource: "https://github.com/idlesauce/ps5debug",
-        binarySource: "https://github.com/idlesauce/ps5debug/releases/download/v0.0.1/ps5debug.elf",
-        version: "0.0.1-r2",
-        toPort: 9021
-    },
-	    {
-        displayTitle: "kstuff-toggle",
-        description: "Kstuff Toggle Beta",
-        fileName: "kstuff-toggle.elf",
-        author: "EchoStretch, john-tornblom",
-        projectSource: "https://github.com/EchoStretch/kstuff-toggle",
-        binarySource: "https://github.com/EchoStretch/kstuff-toggle/actions/runs/15086245462",
-        version: "0.2",
-        supportedFirmwares: ["3.", "4.", "5."],
-        toPort: 9021
-    },
-    {
-        displayTitle: "ps5-versions",
-        description: "Shows kernel build, os and sdk versions",
-        fileName: "ps5-versions.elf",
-        author: "SiSTRo",
-        projectSource: "https://github.com/SiSTR0/ps5-versions",
-        binarySource: "https://github.com/SiSTR0/ps5-versions/releases/download/v1.0/ps5-versions.elf",
-        version: "1.0",
-        supportedFirmwares: ["1.", "2.", "3.", "4."]
-    },
-    {
-        displayTitle: "ps5-remoteplay-get-pin",
-        description: "Get Remote Play PIN for offline activated users. Send again to cancel.",
-        fileName: "rp-get-pin.elf",
-        author: "idlesauce",
-        projectSource: "https://github.com/idlesauce/ps5-remoteplay-get-pin",
-        binarySource: "https://github.com/idlesauce/ps5-remoteplay-get-pin/releases/tag/v0.1.1",
-        version: "0.1.1",
-        toPort: 9021
-    },
-    {
-        // https://github.com/Storm21CH/PS5_Browser_appCache_remove
         displayTitle: "Browser appcache remover",
         description: "Deletes for only the current user in webkit-only mode",
-        fileName: "",
+        fileName: "browser_appcache_remove-v1.1.elf",
         author: "Storm21CH, idlesauce",
-        projectSource: "",
-        binarySource: "",
-        version: "1.0",
+        projectSource: "https://github.com/Storm21CH/PS5_Browser_appCache_remove",
+        binarySource: "https://github.com/Storm21CH/PS5_Browser_appCache_remove/releases/tag/v1.1",
+        version: "1.1",
+        toPort: 9021,
         customAction: CUSTOM_ACTION_APPCACHE_REMOVE
     }
-
 ];
